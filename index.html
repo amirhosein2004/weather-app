@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Check weather information for any city">
+    <title>Weather App</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Cairo:wght@300;400;700&display=swap" 
+          rel="stylesheet">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+          rel="stylesheet" 
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+          crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <header class="header col-md-4 col-sm-10">
+                <h1 lang="fa">دریافت اطلاعات هواشناسی</h1>
+                <h3>JavaScript Weather App</h3>
+            </header>
+
+            <main class="main col-md-7 col-sm-10">
+                <form class="inputs" role="search">
+                    <input type="text" 
+                           id="cityInput" 
+                           dir="rtl" 
+                           placeholder="نام شهر را به انگلیسی وارد کنید..." 
+                           aria-label="City name" 
+                           required>
+                    <input type="submit" 
+                           value="ثبت" 
+                           id="add">
+                </form>
+
+                <section class="display">
+                    <div class="wrapper">
+                        <h2 id="cityOutput"></h2>
+                        <p id="description"></p>
+                        <p id="temp"></p>
+                        <p id="wind"></p>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+    <script src="/main.js"></script>
+</body>
+</html>

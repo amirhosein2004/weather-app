@@ -1,0 +1,113 @@
+/* تنظیمات کلی */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+/* پس‌زمینه اصلی */
+body, .container-fluid {
+    background: url(./img/pg1.jpg) no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ردیف اصلی */
+.row {
+    padding: 3rem 0;
+}
+
+/* هدر */
+.header {
+    background: rgba(0, 0, 0, 0.7) url(./img/pg2.jpg) no-repeat center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 4rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.header p {
+    font-size: 1.2rem;
+}
+
+/* لینک‌ها */
+a {
+    color: #d0e5f5;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #82c4f7;
+}
+
+/* بخش اصلی */
+.main {
+    background: rgba(33, 33, 33, 0.9);
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* بخش ورودی */
+.inputs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.inputs input[type="text"] {
+    width: 300px;
+    padding: 12px;
+    font-size: 1.2rem;
+    border: none;
+    border-bottom: 2px solid #16a864;
+    background: transparent;
+    color: #16a864;
+    text-align: center;
+    outline: none;
+}
+
+.inputs input[type="submit"] {
+    background: #16a864;
+    color: white;
+    font-size: 1.2rem;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.inputs input[type="submit"]:hover {
+    background: #0e7c54;
+}
+
+/* بخش نمایش اطلاعات */
+.display {
+    text-align: center;
+    color: #16a864;
+}
+
+.wrapper {
+    width: 70%;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper h2, .wrapper p {
+    margin: 10px 0;
+}
